@@ -29,3 +29,13 @@ def test_verse_2():
     '1 bottle of milk on the wall.\n'
   )
   assert Bottles().verse(2) == expected
+
+
+def test_verse_1():
+  expected = (
+    '1 bottle of milk on the wall, '
+    '1 bottle of milk.\n'
+    'Take it down and pass it around, '
+    'no more bottles of milk on the wall.\n'
+  )
+  assert Bottles().verse(1) == expected
