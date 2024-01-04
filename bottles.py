@@ -21,13 +21,6 @@ class Bottles:
           'Take it down and pass it around, '
           'no more bottles of milk on the wall.\n'
         )
-      case 2:
-        return (
-          f'{number} bottles of milk on the wall, '
-          f'{number} bottles of milk.\n'
-          f'Take one down and pass it around, '
-          f'{number-1} {self.container(number-1)} of milk on the wall.\n'
-        )
       case _:
         return (
           f'{number} bottles of milk on the wall, '
