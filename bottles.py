@@ -11,7 +11,7 @@ class Bottles:
         return (
           f'{self.quantity(number).capitalize()} {self.container(number)}'
           ' of milk on the wall, '
-          f'no more bottles of milk.\n'
+          f'{self.quantity(number)} {self.container(number)} of milk.\n'
           f'Go to the store and buy some more, '
           f'99 bottles of milk on the wall.\n'
         )
@@ -19,7 +19,7 @@ class Bottles:
         return (
           f'{self.quantity(number).capitalize()} {self.container(number)}'
           ' of milk on the wall, '
-          f'{number} {self.container(number)} of milk.\n'
+          f'{self.quantity(number)} {self.container(number)} of milk.\n'
           f'Take {self.pronoun(number)} down and pass it around, '
           f'{self.quantity(number-1)} {self.container(number-1)}'
           ' of milk on the wall.\n'
