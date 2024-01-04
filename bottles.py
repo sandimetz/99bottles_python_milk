@@ -13,7 +13,8 @@ class Bottles:
           ' of milk on the wall, '
           f'{self.quantity(number)} {self.container(number)} of milk.\n'
           f'{self.action(number)}, '
-          f'{self.quantity(99)} bottles of milk on the wall.\n'
+          f'{self.quantity(99)} {self.container(number-1)}'
+          ' of milk on the wall.\n'
         )
       case _:
         return (
