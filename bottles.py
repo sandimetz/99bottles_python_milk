@@ -16,7 +16,7 @@ class Bottles:
         )
       case 1:
         return (
-          f'1 bottle of milk on the wall, '
+          f'{number} bottle of milk on the wall, '
           f'1 bottle of milk.\n'
           f'Take it down and pass it around, '
           f'no more bottles of milk on the wall.\n'
