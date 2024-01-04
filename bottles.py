@@ -36,5 +36,5 @@ class Bottles:
           f'{number-1} {self.container()} of milk on the wall.\n'
         )
 
-  def container(self):
+  def container(self, number='FIXME'):
     return 'bottles'
