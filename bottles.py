@@ -16,10 +16,10 @@ class Bottles:
         )
       case 1:
         return (
-          '1 bottle of milk on the wall, '
-          '1 bottle of milk.\n'
-          'Take it down and pass it around, '
-          'no more bottles of milk on the wall.\n'
+          f'1 bottle of milk on the wall, '
+          f'1 bottle of milk.\n'
+          f'Take it down and pass it around, '
+          f'no more bottles of milk on the wall.\n'
         )
       case _:
         return (
