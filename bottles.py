@@ -16,7 +16,8 @@ class Bottles:
         )
       case _:
         return (
-          f'{number} {self.container(number)} of milk on the wall, '
+          f'{self.quantity(number).capitalize()} {self.container(number)}'
+          ' of milk on the wall, '
           f'{number} {self.container(number)} of milk.\n'
           f'Take {self.pronoun(number)} down and pass it around, '
           f'{self.quantity(number-1)} {self.container(number-1)}'
