@@ -9,10 +9,10 @@ class Bottles:
     match number:
       case 0:
         return (
-          'No more bottles of milk on the wall, '
-          'no more bottles of milk.\n'
-          'Go to the store and buy some more, '
-          '99 bottles of milk on the wall.\n'
+          f'No more bottles of milk on the wall, '
+          f'no more bottles of milk.\n'
+          f'Go to the store and buy some more, '
+          f'99 bottles of milk on the wall.\n'
         )
       case _:
         return (
