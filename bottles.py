@@ -19,7 +19,7 @@ class Bottles:
           f'{number} {self.container(number)} of milk on the wall, '
           f'{number} {self.container(number)} of milk.\n'
           f'Take {self.pronoun(number)} down and pass it around, '
-          f'no more bottles of milk on the wall.\n'
+          f'{self.quantity()} bottles of milk on the wall.\n'
         )
       case _:
         return (
