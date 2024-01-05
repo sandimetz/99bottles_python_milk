@@ -9,9 +9,9 @@ class Bottles:
     bottle_number = BottleNumber(number)
 
     return (
-      f'{self.quantity(number).capitalize()} {self.container(number)}'
+      f'{bottle_number.quantity().capitalize()} {bottle_number.container()}'
       ' of milk on the wall, '
-      f'{self.quantity(number)} {self.container(number)} of milk.\n'
+      f'{bottle_number.quantity()} {bottle_number.container()} of milk.\n'
       f'{bottle_number.action()}, '
       f'{self.quantity(self.successor(number))} '
       f'{self.container(self.successor(number))}'
