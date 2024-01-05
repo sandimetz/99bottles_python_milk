@@ -12,7 +12,7 @@ class Bottles:
       f'{self.quantity(number).capitalize()} {self.container(number)}'
       ' of milk on the wall, '
       f'{self.quantity(number)} {self.container(number)} of milk.\n'
-      f'{self.action(number)}, '
+      f'{bottle_number.action()}, '
       f'{self.quantity(self.successor(number))} '
       f'{self.container(self.successor(number))}'
       ' of milk on the wall.\n'
