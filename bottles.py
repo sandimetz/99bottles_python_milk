@@ -7,13 +7,12 @@ class Bottles:
 
   def verse(self, number):
     bottle_number = BottleNumber.given(number)
-    next_bottle_number = bottle_number.successor()
 
     return (
       f'{bottle_number} of milk on the wall, '.capitalize() +
       f'{bottle_number} of milk.\n'
       f'{bottle_number.action()}, '
-      f'{next_bottle_number} of milk on the wall.\n'
+      f'{bottle_number.successor()} of milk on the wall.\n'
     )
 
 
