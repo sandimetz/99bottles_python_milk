@@ -6,16 +6,16 @@ class Bottles:
     return '\n'.join(self.verse(i) for i in reversed(range(lower, upper + 1)))
 
   def verse(self, number):
-    return BottleVerse(number).verse(number)
+    BottleVerse(number).verse(number)
 
-    # bottle_number = BottleNumber(number)
+    bottle_number = BottleNumber(number)
 
-    # return (
-    #   f'{bottle_number} of milk on the wall, '.capitalize() +
-    #   f'{bottle_number} of milk.\n'
-    #   f'{bottle_number.action()}, '
-    #   f'{bottle_number.successor()} of milk on the wall.\n'
-    # )
+    return (
+      f'{bottle_number} of milk on the wall, '.capitalize() +
+      f'{bottle_number} of milk.\n'
+      f'{bottle_number.action()}, '
+      f'{bottle_number.successor()} of milk on the wall.\n'
+    )
 
 
 class BottleVerse:
